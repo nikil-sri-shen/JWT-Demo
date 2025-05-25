@@ -16,8 +16,7 @@ app.use(cookieParser());
 app.set("view engine", "ejs");
 
 // database connection
-const dbURI =
-  "mongodb+srv://nikil-sri-shen:Nikil1492@nikil-cluster-0.jp3vwux.mongodb.net/jwt-demo";
+const dbURI = MONGO_URI;
 
 mongoose
   .connect(dbURI, {
